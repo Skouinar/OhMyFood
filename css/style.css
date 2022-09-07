@@ -1,3 +1,42 @@
+/*HTML*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,500;1,700;1,900&family=Shrikhand&display=swap');
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.bg-grey {
+    background-color: #eaeaea;
+}
+
+.bg-lightgrey {
+    background-color: #f6f6f6;
+}
+
+h1 {
+    font-family: 'Shrikhand', cursive;
+    color: white;
+    font-size: 3.5em;
+    margin: 0;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+.w-50 {
+    width: 25%;
+}
+
+
 /*Header*/
 
 header div {
@@ -7,16 +46,26 @@ header div {
 }
 
 
-/*main*/
+/*Main*/
 
 
 /*Localisation*/
 
 .localisation {
-    background-color: grey;
     display: flex;
     justify-content: center;
     padding: 1.5em 0;
+    opacity: 85%;
+}
+
+.localisation h3 {
+    font-weight: 400;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.localisation span {
+    margin-right: 1vw;
 }
 
 
@@ -27,7 +76,44 @@ header div {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1.5em 0;
+    padding: 5vh 0;
+    padding-bottom: 10vh;
+    text-align: center;
+}
+
+.hero p {
+    font-size: 2em;
+    font-weight: 200;
+    margin-bottom: 5vh;
+}
+
+.CTA-explore {
+    margin: auto;
+    align-items: center;
+    background-image: linear-gradient(180deg, #FF79DA, #9356DC);
+    border: 0;
+    border-radius: 50px 50px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 19px 24px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+}
+
+.CTA-explore:active,
+.CTA-explore:hover {
+    outline: 0;
 }
 
 
@@ -42,11 +128,22 @@ header div {
 .fonctionnement-item {
     margin-bottom: 2vh;
     padding: 2vh;
+    padding-left: 25%;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    background-color: grey;
-    border-radius: 15px;
+    background-color: #f6f6f6;
+    border-radius: 45px 45px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.fonctionnement p {
+    font-size: 2.5em;
+    padding-left: 10%;
+}
+
+.glow {
+    background-color: #f5edff;
 }
 
 
@@ -56,16 +153,26 @@ header div {
     width: 90%;
     margin: auto;
     padding: 1.5em 0;
+    padding-bottom: 10vh;
+}
+
+.restaurant-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .restaurant-card {
+    width: 45%;
     margin-bottom: 3vh;
     border-radius: 15px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .restaurant-card img {
+    height: 45vh;
     width: 100%;
+    object-fit: cover;
 }
 
 .lower-card {
@@ -74,21 +181,109 @@ header div {
     justify-content: space-between;
 }
 
+.lower-card h3 {
+    font-size: 1.5em;
+    margin: 0;
+    margin-bottom: 0.5em;
+}
+
+.lower-card p {
+    font-size: 1.15em;
+    margin: 0;
+}
+
+.likeheart {}
+
 
 /*Footer*/
 
 footer {
-    background-color: grey;
-    padding: 5vh 2vw;
+    background-color: #353535;
+    padding: 3vh 2vw;
 }
 
 footer ul {
     margin: 0;
     padding: 0;
+    margin-top: 2em;
 }
 
 footer li {
+    display: flex;
+    align-items: center;
     list-style: none;
     color: white;
+    margin-bottom: 2vh;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.25em;
+}
+
+.bold {
+    margin-left: 0.25vw;
+    font-weight: 700;
+}
+
+
+/*Page Menu*/
+
+
+/*Menu*/
+
+.display {
+    padding-bottom: 15vh;
+}
+
+.card-menu {
+    width: 90%;
+    margin: auto;
+}
+
+.card-menu-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-menu-head h2 {
+    font-family: 'Shrikhand', cursive;
+}
+
+.card-menu-cat {
+    margin-bottom: 10vh;
+}
+
+.card-menu-cat h3 {
+    font-weight: 200;
+    text-transform: capitalize;
+    font-size: 2.5em;
+}
+
+.card-menu-list {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-menu-item h4 {
+    margin: 0;
+    padding: 0;
     margin-bottom: 1vh;
+    font-size: 2em;
+}
+
+.card-menu-item p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+.card-menu-item {
+    background-color: white;
+    border-radius: 15px 15px;
+    padding: 1em;
 }
