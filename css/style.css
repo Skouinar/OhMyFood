@@ -29,7 +29,7 @@ h1 {
 }
 
 h2 {
-    font-size: 3em;
+    font-size: 2em;
 }
 
 .w-50 {
@@ -82,7 +82,7 @@ header div {
 }
 
 .hero p {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 200;
     margin-bottom: 5vh;
 }
@@ -192,7 +192,13 @@ header div {
     margin: 0;
 }
 
-.likeheart {}
+.likeheart {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 30px;
+    margin-right: 20px;
+}
 
 
 /*Footer*/
@@ -233,7 +239,23 @@ footer p {
 /*Menu*/
 
 .display {
+    position: relative;
+    z-index: 10;
     padding-bottom: 15vh;
+    border-radius: 3em 3em;
+}
+
+.car-bg-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    overflow: hidden;
+    margin-bottom: -5vh;
+}
+
+.car-bg-image img {
+    max-width: 100%;
 }
 
 .card-menu {
