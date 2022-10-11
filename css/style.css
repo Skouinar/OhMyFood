@@ -377,15 +377,67 @@ footer p {
     background-color: white;
     border-radius: 15px 15px;
     padding: 1em;
-    animation: appears 0s ease-in 10s;
 }
 
-.appears {}
+.fade-in {
+    animation: 3s fadeIn 2s;
+    -webkit-animation: 3s fadeIn 2s;
+    -moz-animation: 3s fadeIn 2s;
+    -o-animation: 3s fadeIn 2s;
+    -ms-animation: 3s fadeIn 2s;
+}
 
-@keyframes appears {
-    to {
-        visibility: visible;
-        width: 0;
-        height: 0;
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        margin-top: 5vh;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 0vh;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+        margin-top: 5vh;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 0vh;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+        margin-top: 5vh;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 0vh;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+        margin-top: 5vh;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 0vh;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+        margin-top: 5vh;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 0vh;
     }
 }
