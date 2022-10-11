@@ -37,6 +37,58 @@ h2 {
 }
 
 
+/*Loading spinner*/
+
+.preload {
+    background-color: white;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 50;
+}
+
+.ls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.ls::after {
+    content: "";
+    width: 100px;
+    height: 100px;
+    border: 10px solid transparent;
+    border-top-color: purple;
+    border-bottom-color: purple;
+    border-radius: 50%;
+    transform: rotate(0.16turn);
+    animation: ls 1.5s ease infinite;
+}
+
+@keyframes ls {
+    from {
+        transform: rotate(0turn);
+    }
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+.hide {
+    animation: hide 0s ease-in 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hide {
+    to {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+}
+
+
 /*Header*/
 
 header div {
@@ -138,11 +190,11 @@ header div {
 }
 
 .fonctionnement p {
-    font-size: 2.5em;
+    font-size: 2em;
     padding-left: 10%;
 }
 
-.glow {
+.fonctionnement-item:hover {
     background-color: #f5edff;
 }
 
@@ -236,6 +288,23 @@ footer p {
 /*Page Menu*/
 
 
+/*header*/
+
+.head-menu {
+    display: flex;
+    align-items: center;
+}
+
+.head-menu img {
+    margin-right: 25%;
+}
+
+.back-btn {
+    color: black;
+    padding-right: 25%;
+}
+
+
 /*Menu*/
 
 .display {
@@ -308,4 +377,15 @@ footer p {
     background-color: white;
     border-radius: 15px 15px;
     padding: 1em;
+    animation: appears 0s ease-in 10s;
+}
+
+.appears {}
+
+@keyframes appears {
+    to {
+        visibility: visible;
+        width: 0;
+        height: 0;
+    }
 }
