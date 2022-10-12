@@ -380,43 +380,43 @@ footer p {
 }
 
 .fade-in {
-    animation: 3s fadeIn 2s;
-    -webkit-animation: 3s fadeIn 2s;
-    -moz-animation: 3s fadeIn 2s;
-    -o-animation: 3s fadeIn 2s;
-    -ms-animation: 3s fadeIn 2s;
+    animation: 2s fadeIn;
+    -webkit-animation: 2s fadeIn;
+    -moz-animation: 2s fadeIn;
+    -o-animation: 2s fadeIn;
+    -ms-animation: 2s fadeIn;
 }
 
 @keyframes fadeIn {
     0% {
         opacity: 0;
-        margin-top: 5vh;
+        transform: translateY(80px);
     }
     100% {
         opacity: 1;
-        margin-top: 0vh;
+        transform: translateY(0px)
     }
 }
 
 @-moz-keyframes fadeIn {
     0% {
         opacity: 0;
-        margin-top: 5vh;
+        transform: translateY(80px);
     }
     100% {
         opacity: 1;
-        margin-top: 0vh;
+        transform: translateY(0px)
     }
 }
 
 @-webkit-keyframes fadeIn {
     0% {
         opacity: 0;
-        margin-top: 5vh;
+        transform: translateY(80px);
     }
     100% {
         opacity: 1;
-        margin-top: 0vh;
+        transform: translateY(0px)
     }
 }
 
@@ -434,10 +434,10 @@ footer p {
 @-ms-keyframes fadeIn {
     0% {
         opacity: 0;
-        margin-top: 5vh;
+        transform: translateY(80px);
     }
     100% {
         opacity: 1;
-        margin-top: 0vh;
+        transform: translateY(0px)
     }
 }
