@@ -508,25 +508,30 @@ footer span {
 
 @media (max-width:768px) {
     /*Accueil*/
+    header img {
+        width: 90%;
+    }
     .hero {
         padding: 5vh 0px 5vh;
     }
     .hero p {
         width: 90%;
+        font-size: 1.25em;
         margin: auto;
         margin-bottom: 2vh;
+        margin-top: 2vh;
     }
     .fonctionnement-item {
         margin-bottom: 6vh;
         margin-top: 4vh;
         padding: 3vh;
-        padding-left: 10%;
+        padding-left: 15%;
     }
     .fonctionnement p {
         font-size: 1.5em;
     }
     .restaurant-card img {
-        height: 25vh;
+        height: 15vh;
     }
     .lower-card h3 {
         font-size: 1em;
@@ -578,8 +583,11 @@ footer span {
     }
     .head-menu img {
         margin-right: 0;
+        width: 75%;
     }
     .underline {
         width: 15%;
     }
 }
+
+@media (max-width:375px) {}
