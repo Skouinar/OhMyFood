@@ -500,7 +500,7 @@ footer span {
     }
     to {
         opacity: 1;
-        visibility: visibile;
+        visibility: visible;
         transform: rotate(-1turn);
     }
 }
